@@ -18,20 +18,20 @@ jobs:
 
       - name: Build app (unsigned)
         run: |
-          # 用 -target 直接构建（手写 pbxproj 无共享 scheme）
+          # 用 -target 构建，SYMROOT 指定输出到本地 build/（手写 pbxproj 无共享 scheme）
           xcodebuild -project BuddyAuth.xcodeproj \
             -target BuddyAuth \
             -configuration Release \
             -sdk iphoneos \
-            -derivedDataPath build \
+            SYMROOT=build OBJROOT=build/obj \
             CODE_SIGNING_ALLOWED=NO \
             build || exit 1
           echo "=== find app ==="
-          find build -name "*.app" -maxdepth 6 -type d | head
+          find build -name "BuddyAuth.app" -maxdepth 8 -type d | head
 
       - name: Package IPA
         run: |
-          APP_DIR=$(find build -name "*.app" -maxdepth 8 -type d | head -1)
+          APP_DIR=$(find build -name "BuddyAuth.app" -maxdepth 8 -type d | head -1)
           echo "APP_DIR=$APP_DIR"
           if [ -z "$APP_DIR" ]; then echo "No .app found"; exit 1; fi
           mkdir -p Payload
