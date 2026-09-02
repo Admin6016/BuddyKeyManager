@@ -1356,6 +1356,9 @@ struct ProxySettingsView: View {
 
                     // 服务器推送设置卡
                     pushSettingsCard
+
+                    // 关于 / Release
+                    aboutCard
                 }
                 .padding(.horizontal, 16)
                 .padding(.bottom, 24)
@@ -1484,6 +1487,61 @@ struct ProxySettingsView: View {
         }
         .padding(16)
         .background(RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous).fill(Color(.secondarySystemGroupedBackground)))
+    }
+
+    /// 关于 / Release（跳转 GitHub Release 下载）
+    private var aboutCard: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Label("BuddyKeyManager", systemImage: "key.icloud")
+                    .font(.headline)
+                Spacer()
+                Text(appVersion)
+                    .font(.caption.weight(.semibold))
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 3)
+                    .background(Capsule().fill(Theme.brand.opacity(0.12)))
+                    .foregroundColor(Theme.brand)
+            }
+            Text("WorkBuddy / CodeBuddy OAuth 密钥管理器 · 无痕登录 / 接码 / 凭证管理")
+                .font(.caption)
+                .foregroundColor(.secondary)
+
+            Button {
+                openReleasePage()
+            } label: {
+                HStack {
+                    Image(systemName: "arrow.down.circle.fill")
+                    Text("查看更新 · 下载最新版")
+                    Spacer()
+                    Image(systemName: "arrow.up.right.square")
+                        .font(.caption)
+                        .opacity(0.5)
+                }
+                .font(.subheadline.weight(.semibold))
+                .foregroundColor(.white)
+                .padding(14)
+                .background(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .fill(Theme.brandGradient)
+                )
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(16)
+        .background(RoundedRectangle(cornerRadius: Theme.cornerRadius, style: .continuous).fill(Color(.secondarySystemGroupedBackground)))
+    }
+
+    /// 当前 App 版本号
+    private var appVersion: String {
+        let v = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0"
+        return "v\(v)"
+    }
+
+    /// 打开 GitHub Release 页面
+    private func openReleasePage() {
+        let url = URL(string: "https://github.com/Admin6016/BuddyKeyManager/releases/latest")!
+        UIApplication.shared.open(url)
     }
 }
 

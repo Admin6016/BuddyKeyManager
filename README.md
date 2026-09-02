@@ -6,6 +6,16 @@
 
 适合批量管理 WorkBuddy / CodeBuddy 账号凭证的场景。
 
+## ⬇️ 下载（Release）
+
+[![Download](https://img.shields.io/badge/下载-BuddyKeyManager%20IPA-brightgreen)](https://github.com/Admin6016/BuddyKeyManager/releases/latest)
+[![Release](https://img.shields.io/github/v/release/Admin6016/BuddyKeyManager)](https://github.com/Admin6016/BuddyKeyManager/releases/latest)
+
+👉 **[前往 Release 下载最新版 IPA](https://github.com/Admin6016/BuddyKeyManager/releases/latest)**
+
+> 产物为**未签名 IPA**，通过 **TrollStore / AltStore / Sideloadly / 自签** 安装到 iPhone。
+> App 内「设置」页底部也内置了「查看更新 · 下载最新版」入口，可直接跳转本 Release 页。
+
 ## 功能特性
 
 ### 🔐 授权登录
