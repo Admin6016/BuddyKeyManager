@@ -1,0 +1,60 @@
+name: Build IPA & Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show toolchain
+        run: xcodebuild -version
+
+      - name: Build app (unsigned)
+        run: |
+          # 用 -target 直接构建（手写 pbxproj 无共享 scheme）
+          xcodebuild -project BuddyAuth.xcodeproj \
+            -target BuddyAuth \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            build || exit 1
+          echo "=== find app ==="
+          find build -name "*.app" -maxdepth 6 -type d | head
+
+      - name: Package IPA
+        run: |
+          APP_DIR=$(find build -name "*.app" -maxdepth 8 -type d | head -1)
+          echo "APP_DIR=$APP_DIR"
+          if [ -z "$APP_DIR" ]; then echo "No .app found"; exit 1; fi
+          mkdir -p Payload
+          cp -R "$APP_DIR" Payload/
+          # 移除签名残留
+          rm -rf Payload/*.app/_CodeSignature 2>/dev/null || true
+          # 产物命名带版本
+          VERSION=$(defaults read "$APP_DIR/Info" CFBundleShortVersionString 2>/dev/null || echo "1.0")
+          echo "VERSION=$VERSION"
+          zip -r "BuddyKeyManager-$VERSION-unsigned.ipa" Payload
+          ls -la *.ipa
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: BuddyKeyManager-unsigned
+          path: ./*.ipa
+
+      - name: Create Release (on tag)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ./*.ipa
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
