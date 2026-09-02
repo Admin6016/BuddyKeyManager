@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0000000000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* ContentView.swift */; };
+		AB0000000000000000000002 /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000002 /* AuthModels.swift */; };
+		AB0000000000000000000003 /* BuddyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000003 /* BuddyAPI.swift */; };
+		AB0000000000000000000004 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000004 /* CredentialStore.swift */; };
+		AB0000000000000000000005 /* IncognitoWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000005 /* IncognitoWebView.swift */; };
+		AB0000000000000000000006 /* BuddyAuthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000006 /* BuddyAuthApp.swift */; };
+		AB0000000000000000000007 /* ProxySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000A /* ProxySettings.swift */; };
+		AB0000000000000000000008 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000B /* Theme.swift */; };
+		AB0000000000000000000009 /* SmsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000C /* SmsAPI.swift */; };
+		AB000000000000000000000B /* SmsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000E /* SmsBar.swift */; };
+		AB000000000000000000000C /* PushAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000F /* PushAPI.swift */; };
+		AB000000000000000000000D /* SvipxxSmsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* SvipxxSmsAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000002 /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		AA0000000000000000000003 /* BuddyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyAPI.swift; sourceTree = "<group>"; };
+		AA0000000000000000000004 /* CredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
+		AA0000000000000000000005 /* IncognitoWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncognitoWebView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000006 /* BuddyAuthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyAuthApp.swift; sourceTree = "<group>"; };
+		AA0000000000000000000007 /* BuddyAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0000000000000000000009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA000000000000000000000A /* ProxySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxySettings.swift; sourceTree = "<group>"; };
+		AA000000000000000000000B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		AA000000000000000000000C /* SmsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsAPI.swift; sourceTree = "<group>"; };
+		AA000000000000000000000E /* SmsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsBar.swift; sourceTree = "<group>"; };
+		AA000000000000000000000F /* PushAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAPI.swift; sourceTree = "<group>"; };
+		AA0000000000000000000010 /* SvipxxSmsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvipxxSmsAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD0000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				AD0000000000000000000002 /* BuddyAuth */,
+				AD0000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD0000000000000000000002 /* BuddyAuth */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000006 /* BuddyAuthApp.swift */,
+				AA0000000000000000000001 /* ContentView.swift */,
+				AA0000000000000000000002 /* AuthModels.swift */,
+				AA0000000000000000000003 /* BuddyAPI.swift */,
+				AA0000000000000000000004 /* CredentialStore.swift */,
+				AA0000000000000000000005 /* IncognitoWebView.swift */,
+				AA000000000000000000000A /* ProxySettings.swift */,
+				AA000000000000000000000B /* Theme.swift */,
+				AA000000000000000000000C /* SmsAPI.swift */,
+				AA000000000000000000000E /* SmsBar.swift */,
+				AA000000000000000000000F /* PushAPI.swift */,
+				AA0000000000000000000010 /* SvipxxSmsAPI.swift */,
+				AA0000000000000000000008 /* Assets.xcassets */,
+				AA0000000000000000000009 /* Info.plist */,
+			);
+			path = BuddyAuth;
+			sourceTree = "<group>";
+		};
+		AD0000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000007 /* BuddyAuth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE0000000000000000000001 /* BuddyAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00000000000000000000001 /* Build configuration list for PBXNativeTarget "BuddyAuth" */;
+			buildPhases = (
+				AF0000000000000000000001 /* Sources */,
+				AC0000000000000000000001 /* Frameworks */,
+				AF0000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuddyAuth;
+			productName = BuddyAuth;
+			productReference = AA0000000000000000000007 /* BuddyAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AE0000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B10000000000000000000001 /* Build configuration list for PBXProject "BuddyAuth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD0000000000000000000001;
+			productRefGroup = AD0000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0000000000000000000001 /* BuddyAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF0000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF0000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0000000000000000000001 /* ContentView.swift in Sources */,
+				AB0000000000000000000002 /* AuthModels.swift in Sources */,
+				AB0000000000000000000003 /* BuddyAPI.swift in Sources */,
+				AB0000000000000000000004 /* CredentialStore.swift in Sources */,
+				AB0000000000000000000005 /* IncognitoWebView.swift in Sources */,
+				AB0000000000000000000006 /* BuddyAuthApp.swift in Sources */,
+				AB0000000000000000000007 /* ProxySettings.swift in Sources */,
+				AB0000000000000000000008 /* Theme.swift in Sources */,
+				AB0000000000000000000009 /* SmsAPI.swift in Sources */,
+				AB000000000000000000000B /* SmsBar.swift in Sources */,
+				AB000000000000000000000C /* PushAPI.swift in Sources */,
+				AB000000000000000000000D /* SvipxxSmsAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B20000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B20000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BuddyAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddykey.manager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BuddyAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.buddykey.manager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B00000000000000000000001 /* Build configuration list for PBXNativeTarget "BuddyAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20000000000000000000003 /* Debug */,
+				B20000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10000000000000000000001 /* Build configuration list for PBXProject "BuddyAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20000000000000000000001 /* Debug */,
+				B20000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90000000000000000000001 /* Project object */;
+}

@@ -1,0 +1,25 @@
+# Xcode / iOS build artifacts
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# OS
+.DS_Store
+*~
+*.swp
+
+# 凭据 / 隐私（本地运行数据，勿提交）
+*.json
+!BuddyAuth/Assets.xcassets/**
+BuddyAuth/credentials.json
+BuddyAuth/sessions.json
+BuddyAuth/*.bak
